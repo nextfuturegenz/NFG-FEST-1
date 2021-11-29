@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Hangman</title>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Hangman</h1>
+  <h2 class="text-center">Vanilla JavaScript Hangman Game</h2>
+    <p class="text-center">Use the alphabet below to guess the word, or click hint to get a clue. </p>
+  <div class="text-center">
+    <div id="keyboard"></div>
+    <p>Guess the cities</p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <img id='hangmanPic' src="./images/0.png" alt="">
+
+    <div class="text-lg-center">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+    <button type="button" class="btn btn-light" onClick="reset()">Play again</button>
+  </div> 
+</div>
+
+<script src='./js/hangman.js'></script>
+</body>
+</html>
